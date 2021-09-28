@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Verify users can login to portal with valid credentials",
+        "description": "",
+        "id": "login-to-an-e-commerce-website;verify-users-can-login-to-portal-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:847)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)\r\n\tat org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)\r\n\tat org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:147)\r\n\tat StepDefinitions.user_visits_e_commerce_website(StepDefinitions.java:26)\r\n\tat ✽.User visits e-commerce website( login.feature:4)\r\n",
+              "duration": 294514300,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User visits e-commerce website",
+            "match": {
+              "location": "StepDefinitions.user_visits_e_commerce_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User enters valid \"ahmed.tawhid005@gmail.com\" and valid \"alvi001\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User can logged in successfully",
+            "match": {
+              "location": "StepDefinitions.user_can_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Verify users cannot login to portal without valid credentials",
+        "description": "",
+        "id": "login-to-an-e-commerce-website;verify-users-cannot-login-to-portal-without-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:847)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)\r\n\tat org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)\r\n\tat org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:147)\r\n\tat StepDefinitions.user_visits_e_commerce_website(StepDefinitions.java:26)\r\n\tat ✽.User visits e-commerce website( login.feature:13)\r\n",
+              "duration": 15339300,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "User visits e-commerce website",
+            "match": {
+              "location": "StepDefinitions.user_visits_e_commerce_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User enters invalid \"ahmed.tawhid678@gmail.com\" and invalid \"alvi009\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ahmed.tawhid678@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "alvi009",
+                  "offset": 61
+                }
+              ],
+              "location": "StepDefinitions.user_enters_invalid_and_invalid(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User can not logged in successfully",
+            "match": {
+              "location": "StepDefinitions.user_can_not_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to an e-commerce website",
+    "description": "",
+    "id": "login-to-an-e-commerce-website",
+    "keyword": "Feature",
+    "uri": " login.feature",
+    "tags": []
+  }
+]
